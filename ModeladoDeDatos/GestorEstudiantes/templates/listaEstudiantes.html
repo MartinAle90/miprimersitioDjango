@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Estudiantes</title>
+</head>
+<body>
+    <h1>Todos los estudiantes</h1>
+
+    <ul>
+        {% for i_estud in listaLibro %}
+        <li>{{ i_estud.nombreEst }} {{ i_estud.apellidoEst }}, edad: {{ i_estud.edadEst }} y nota: {{ i_estud.notaEst }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

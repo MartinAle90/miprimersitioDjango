@@ -1,5 +1,5 @@
 """
-URL configuration for projectClase09 project.
+URL configuration for ModeladoDeDatos project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -14,18 +14,10 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.urls import path
-from .views import crearBook
-from .views import mostrar_libros
-from . import views
+from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
-    # path
-    # ( se refiere a la url que escribimos en el navegador,
-    # la funcionalidad que cumple la url,
-    # si se quiere alguna descripcion)
-    path('book', crearBook, name='crearBook'),
-    path('all', mostrar_libros, name='mostrar_libros'),
-    path('json', views.ejemplo_json_view, name='json response'),
-
+    path('admin/', admin.site.urls),
+    path('', include('GestorEstudiantes.urls')),
 ]
