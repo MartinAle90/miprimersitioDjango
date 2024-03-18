@@ -1,0 +1,14 @@
+Ejecricio clase 12
+
+Partiendo de un proyecto de django, nuevo o antiguo
+
+Crear view trabajando los objetos:
+    Template
+    Context
+
+En las plantillas aplicar:
+    Condicionales (if, else, elif)
+    Bucles(for ... in)
+    dot notacion, para referirnos a los valores especificos de un diccionario
+    (opcional) bootstrap
+

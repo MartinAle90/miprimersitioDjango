@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--{{variable}}-->
+    <h1>Hola {{nombre_user}}! Como Estas?</h1>
+    <h2>Fecha actual: {{fecha_actual}}</h2>
+
+    {% if cursos %}
+        <h3>Cursos realizados</h3>
+        <ul>
+            {% for curso in cursos %}
+                <li>{{curso}}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h3>No has hecho ningun curso</h3>
+    {% endif %}
+</body>
+</html>
