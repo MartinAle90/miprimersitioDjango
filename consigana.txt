@@ -1,0 +1,5 @@
+1. crear un proyecto de django nuevo o recibclar un proyecto anterior para trabajar archivos estaticos e importacion de archivos html
+
+2. Crear un archivo .css para 1 html o mas, vincularlos correctamente, recordar configurar el setting, y hacer los llamados correspondientes en cada template
+
+3. vincular 2 archivos html (1 padre, 1 hijo), para que el padre pueda contener el html de su hijo en determinadas lineas
